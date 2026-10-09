@@ -25,13 +25,9 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-
 <body>
 
-
-  <!-- =========================
-       HEADER
-  ========================== -->
+  <!-- HEADER -->
 
   <header class="site-header">
 
@@ -48,7 +44,6 @@
         >
       </a>
 
-
       <button
         class="menu-button"
         id="menuButton"
@@ -59,17 +54,13 @@
         <span aria-hidden="true">☰</span>
       </button>
 
-
       <nav
         class="nav-menu"
         id="navMenu"
       >
         <a href="index.html">Home</a>
-
         <a href="about.html">About</a>
-
         <a href="products.html">Products</a>
-
         <a href="contact.html">Contact</a>
       </nav>
 
@@ -79,16 +70,9 @@
 
 
 
-  <!-- =========================
-       MAIN
-  ========================== -->
-
   <main>
 
-
-    <!-- =========================
-         CONTACT HERO
-    ========================== -->
+    <!-- CONTACT HERO -->
 
     <section class="contact-hero">
 
@@ -117,18 +101,14 @@
 
 
 
-    <!-- =========================
-         CONTACT SECTION
-    ========================== -->
+    <!-- CONTACT SECTION -->
 
     <section class="section contact-section">
 
       <div class="container contact-grid">
 
 
-        <!-- =========================
-             CONTACT FORM
-        ========================== -->
+        <!-- CONTACT FORM -->
 
         <div class="contact-form-wrapper reveal">
 
@@ -140,12 +120,36 @@
             Tell us what you need.
           </h2>
 
+          <p class="contact-form-intro">
+            Complete the form below and we’ll receive your message through our contact system.
+          </p>
+
 
           <form
             class="contact-form"
             action="https://formspree.io/f/xljgbzoy"
-            method="post"
+            method="POST"
           >
+
+            <!-- OPTIONAL EMAIL SUBJECT -->
+
+            <input
+              type="hidden"
+              name="_subject"
+              value="New Vertex Lanka Website Enquiry"
+            >
+
+
+            <!-- ANTI-SPAM HONEYPOT -->
+
+            <input
+              type="text"
+              name="_gotcha"
+              tabindex="-1"
+              autocomplete="off"
+              class="form-honeypot"
+              aria-hidden="true"
+            >
 
 
             <!-- NAME -->
@@ -161,11 +165,11 @@
                 id="name"
                 name="name"
                 autocomplete="name"
+                placeholder="Your name"
                 required
               >
 
             </div>
-
 
 
             <!-- EMAIL -->
@@ -181,11 +185,11 @@
                 id="email"
                 name="email"
                 autocomplete="email"
+                placeholder="you@example.com"
                 required
               >
 
             </div>
-
 
 
             <!-- PHONE -->
@@ -201,10 +205,10 @@
                 id="phone"
                 name="phone"
                 autocomplete="tel"
+                placeholder="+94..."
               >
 
             </div>
-
 
 
             <!-- SUBJECT -->
@@ -219,10 +223,10 @@
                 type="text"
                 id="subject"
                 name="subject"
+                placeholder="How can we help?"
               >
 
             </div>
-
 
 
             <!-- MESSAGE -->
@@ -237,14 +241,14 @@
                 id="message"
                 name="message"
                 rows="7"
+                placeholder="Tell us about your project or requirement..."
                 required
               ></textarea>
 
             </div>
 
 
-
-            <!-- FORM SUBMIT -->
+            <!-- SUBMIT -->
 
             <div class="form-group-full">
 
@@ -257,16 +261,13 @@
 
             </div>
 
-
           </form>
 
         </div>
 
 
 
-        <!-- =========================
-             CONTACT INFORMATION
-        ========================== -->
+        <!-- CONTACT INFORMATION -->
 
         <aside class="contact-info reveal">
 
@@ -286,7 +287,6 @@
 
           <div class="contact-info-list">
 
-
             <!-- COMPANY -->
 
             <div class="contact-info-item">
@@ -301,7 +301,6 @@
               </p>
 
             </div>
-
 
 
             <!-- LOCATION -->
@@ -319,7 +318,6 @@
             </div>
 
 
-
             <!-- EMAIL -->
 
             <div class="contact-info-item">
@@ -334,11 +332,9 @@
 
             </div>
 
-
           </div>
 
         </aside>
-
 
       </div>
 
@@ -346,16 +342,13 @@
 
 
 
-    <!-- =========================
-         CTA
-    ========================== -->
+    <!-- CONTACT CTA -->
 
     <section class="section cta-section">
 
       <div class="container">
 
         <div class="cta-box reveal">
-
 
           <div class="cta-content">
 
@@ -386,31 +379,23 @@
 
           </div>
 
-
         </div>
 
       </div>
 
     </section>
 
-
   </main>
 
 
 
-  <!-- =========================
-       FOOTER
-  ========================== -->
+  <!-- FOOTER -->
 
   <footer class="footer">
 
     <div class="container">
 
-
       <div class="footer-grid">
-
-
-        <!-- BRAND -->
 
         <div class="footer-brand">
 
@@ -429,36 +414,19 @@
         </div>
 
 
-
-        <!-- COMPANY LINKS -->
-
         <div class="footer-column">
 
           <h3>
             Company
           </h3>
 
-          <a href="index.html">
-            Home
-          </a>
-
-          <a href="about.html">
-            About
-          </a>
-
-          <a href="products.html">
-            Products
-          </a>
-
-          <a href="contact.html">
-            Contact
-          </a>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
 
         </div>
 
-
-
-        <!-- PRODUCT LINKS -->
 
         <div class="footer-column">
 
@@ -466,23 +434,12 @@
             Products
           </h3>
 
-          <a href="sims.html">
-            VERTEX SIMS
-          </a>
-
-          <a href="shop.html">
-            VERTEX Best Shop
-          </a>
-
-          <a href="invoice.html">
-            VERTEX Invoice
-          </a>
+          <a href="sims.html">VERTEX SIMS</a>
+          <a href="shop.html">VERTEX Best Shop</a>
+          <a href="invoice.html">VERTEX Invoice</a>
 
         </div>
 
-
-
-        <!-- CONTACT -->
 
         <div class="footer-column">
 
@@ -500,12 +457,8 @@
 
         </div>
 
-
       </div>
 
-
-
-      <!-- COPYRIGHT -->
 
       <div class="footer-bottom">
 
@@ -515,15 +468,12 @@
 
       </div>
 
-
     </div>
 
   </footer>
 
 
-
   <script src="script.js"></script>
-
 
 </body>
 
